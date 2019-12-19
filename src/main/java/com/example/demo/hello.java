@@ -11,7 +11,7 @@ public class hello {
     @GetMapping("/hello/{b}")
     public String Hello(@PathVariable("b") int b ,HttpSession session){
         session.setAttribute("a",b+"");
-        
+        System.out.print(111);
         return "hello";
     }
 }
