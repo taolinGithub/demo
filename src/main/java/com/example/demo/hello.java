@@ -12,6 +12,7 @@ public class hello {
     public String Hello(@PathVariable("b") int b ,HttpSession session){
         session.setAttribute("a",b+"");
         System.out.print(111);
+        System.out.print(333);
         return "hello";
     }
 }
